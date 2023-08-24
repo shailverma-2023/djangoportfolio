@@ -2,14 +2,14 @@
 
 {
     "builds": [{
-        "src": "backend/backend/wsgi.py",
+        "src": "cv/backend/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "backend/backend/wsgi.py"
+            "dest": "cv/backend/wsgi.py"
         }
     ]
 }
